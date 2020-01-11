@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `imovel` (
+	`ID` INT(10) NOT NULL AUTO_INCREMENT,
+	`Nome` VARCHAR(255)   NULL,
+	`Endereco` VARCHAR(255)  NULL,
+	`UserId` VARCHAR(255)  NULL,
+
+
+	PRIMARY KEY (`ID`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB;

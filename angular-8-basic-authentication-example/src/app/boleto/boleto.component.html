@@ -1,0 +1,61 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">Bem vindo ao sistema seu sistema </h4>
+    <div class="card-body">
+        <h6>Imóvel</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+    </div>
+</div>
+
+<br>
+
+<div class="list-group">
+    <div class="list-group-item"  *ngFor="let item of imoveis; let i = index">
+        {{item.nome}} {{item.endereco}}
+        <a class="btn btn-lg btn-primary" disabled (click)="retrieve(item.id)">Consultar Débitos</a>, 
+            <a class="btn btn-lg btn-primary"  href="/reparo" disabled >Consultar Solicitações de Reparo</a>
+    </div>
+</div>
+  
+<br>
+
+<br>
+
+<div class="card mt-4">
+    <h4 class="card-header">Multas e juros serão debitados nas contas a serem emitidas nos próximos faturamentos.</h4>
+    <div class="card-body">
+        <h6>Segunda via e consulta de débitos</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+    </div>
+</div>
+<br>
+<div class="form-row">
+    <div class="col">
+     Nome<input type="text" class="form-control" id="email" name="email" disabled>
+    </div>
+    <div class="col">
+       Endereço <input type="text" class="form-control" id="Local" name="Local" disabled>
+    </div>
+</div>
+<br>
+<div class="form-row">
+
+    <div class="col">
+        Vencimento<input type="text" class="form-control" id="DigitoLocal" name="Servico3" [value]="boleto.dtVenc" disabled>
+    </div>
+    <div class="col">
+        Total<input type="text" class="form-control" id="DigitoLocal" name="Servico3" [value]="boleto.total" disabled>
+    </div>
+    <div class="col">
+      Matrícula  <input type="text" class="form-control" id="DigitoLocal" name="DigitoLocal"  [value]="boleto.local" d disabled>
+    </div>
+    <div class="col">
+       Serviço 1 <input type="text" class="form-control" id="DigitoLocal" name="Servico1" [value]="boleto.servico1" disabled>
+    </div>
+    <div class="col">
+        Serviço 2    <input type="text" class="form-control" id="DigitoLocal" name="Servico2"  [value]="boleto.servico2" disabled>
+    </div>
+    <div class="col">
+        Serviço 3 <input type="text" class="form-control" id="DigitoLocal" name="Servico3"  [value]="boleto.servico3" disabled>
+    </div>
+    
+</div>

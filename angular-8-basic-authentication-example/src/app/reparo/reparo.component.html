@@ -1,0 +1,46 @@
+﻿<br>
+
+<div class="form-group">
+    <label for="formGroupExampleInput">Titulo</label>
+    <input [(ngModel)]="titulo" name="titulo" type="text" class="form-control" id="formGroupExampleInput" placeholder="Titulo da solicitação a ser aberta (reparo)">
+</div>
+<div class="form-group">
+    <label for="formGroupExampleInput2">Descricao</label>
+    <input [(ngModel)]="descricao" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite uma breve descricação sobre o problema">
+</div>
+
+<div class="form-group">
+    <label for="sel1">Dia Incidente</label>
+        <select [(ngModel)]="diaIncidente" class="form-control" id="sel1">
+        <option>Segunda</option>
+        <option>terca</option>
+        <option>quarta</option>
+        <option>quinta</option>
+        <option>sexta</option>
+        <option>sábado</option>
+        <option>domingo</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="sel1">Dia Preferencial para o reparo</label>
+        <select [(ngModel)]="diaConserto" class="form-control" id="sel1">
+        <option>Segunda</option>
+        <option>terca</option>
+        <option>quarta</option>
+        <option>quinta</option>
+        <option>sexta</option>
+        <option>sábado</option>
+        <option>domingo</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="sel1">Possui débito?</label>
+        <select [(ngModel)]="possuiDebito" class="form-control" id="sel1">
+        <option>Não</option>
+        <option>Sim</option>
+    </select>
+</div>
+
+<button type="Enviar" class="btn btn-primary btn-block" (click)="reparo()">Enviar</button>

@@ -1,0 +1,36 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">Bem vindo ao sistema seu sistema </h4>
+    <div class="card-body">
+        <h6>Suas informações sigilosas</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+    </div>
+</div>
+
+<br><br>
+<div class="card" style="width:400px">
+    
+    <div class="card-body">
+      <h4 class="card-title">Dados Pessoais</h4>
+      <p class="card-text">{{Nome}}</p>
+      <p class="card-text">{{Sobrenome}}</p>
+      <p class="card-text">{{DtNasc}}</p>
+    </div>
+  </div>
+<br>
+  <div class="card" style="width:400px">
+    
+    <div class="card-body">
+      <h4 class="card-title">Endereco</h4>
+      <p class="card-text">{{Endereco}}</p>
+      <p class="card-text">{{Complemento}}</p>
+    </div>
+  </div>
+<br>
+<div class="card" style="width:400px">
+  <div class="card-body">
+    <h4 class="card-title">Contato</h4>
+    <p class="card-text">{{Telefone}}</p>
+    <p class="card-text">{{Celular}}</p>
+
+  </div>
+</div>
