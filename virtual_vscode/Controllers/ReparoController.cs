@@ -70,34 +70,6 @@ namespace LojaVirtual.Controllers
             return new OkObjectResult(Reparo);
         }
 
-         // Configura o Swagger para a operação
-        // http://localhost:{porta}/api/Reparos/v1/{id}
-        // [SwaggerResponse((202), Type = typeof(Reparo))]
-        // determina o objeto de retorno em caso de sucesso Reparo
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 204, 400 e 401
-        [HttpPost("PostBase64")]
-        [HttpOptions]
-        [SwaggerResponse((200), Type = typeof(string))]
-        [SwaggerResponse(204)]
-        [SwaggerResponse(400)]
-        [SwaggerResponse(401)]
-        [Authorize("Bearer")]
-        [TypeFilter(typeof(HyperMediaFilter))]
-        public async Task<string> PostBase64() 
-        {
-            
-            var filePath = System.IO.Path.GetTempFileName();
-
-            var file = Request.Form.Files[0];
-
-         
-            using (var stream = new System.IO.FileStream(filePath, System.IO.FileMode.Create))
-            {
-                await file.CopyToAsync(stream);
-
-                return Convert.ToString(file.Length);
-            }
-        }
-           
+    
     }
 }
