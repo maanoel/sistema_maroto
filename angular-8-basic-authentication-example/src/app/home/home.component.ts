@@ -10,8 +10,8 @@ export class HomeComponent {
     Nome : string = 'teste';
     @Input() Sobrenome = '';
     @Input() DtNasc = '';
-    @Input() Enedereco = '';
-    @Input() Cmplemento = '';
+    @Input() Endereco = '';
+    @Input() Complemento = '';
     @Input() Telefone = '';
     @Input() Celular = '';
 
@@ -34,8 +34,7 @@ export class HomeComponent {
             this.Nome = user.nome;
             this.DtNasc = user.dtNasc;
             this.Sobrenome = user.sobrenome;
-            this.Cmplemento= user.complemento;
-           // this.Endereco = user.endereco;
+            this.Endereco = user.endereco;
             this.Telefone = user.telefone;
             this.Celular = user.celular;
         });
