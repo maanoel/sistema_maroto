@@ -27,6 +27,12 @@ namespace LojaVirtual.Business.Implementations
             return _converter.Parse(ReparoEntity);
         }
 
+        public List<ReparoVO> FindAll(){
+
+            return _converter.ParseList(_repository.FindAll());
+
+        }
+
       
     }
 }

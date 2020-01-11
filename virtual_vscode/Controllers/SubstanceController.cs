@@ -10,30 +10,30 @@ using LojaVirtual.Model;
 namespace LojaVirtual.Controllers
 {
 
-    /* Mapeia as requisições de http://localhost:{porta}/api/persons/v1/
-    Por padrão o ASP.NET Core mapeia todas as classes que extendem Controller
+    /* Mapeia as requisiï¿½ï¿½es de http://localhost:{porta}/api/persons/v1/
+    Por padrï¿½o o ASP.NET Core mapeia todas as classes que extendem Controller
     pegando a primeira parte do nome da classe em lower case [substance]Controller
-    e expõe como endpoint REST
+    e expï¿½e como endpoint REST
     */
     [ApiVersion("1")]
     [Route("api/[controller]/v{version:apiVersion}")]
     public class SubstanceController : Controller
     {
-        //Declaração do serviço usado
+        //Declaraï¿½ï¿½o do serviï¿½o usado
         private ISubstanceBusiness _substanceBusiness;
 
-        /* Injeção de uma instancia de ISubstanceBusiness ao criar
+        /* Injeï¿½ï¿½o de uma instancia de ISubstanceBusiness ao criar
         uma instancia de PersonController */
         public SubstanceController(ISubstanceBusiness substanceBusiness)
         {
             _substanceBusiness = substanceBusiness;
         }
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/persons/v1/
         // [SwaggerResponse((202), Type = typeof(List<substance>))]
         // determina o objeto de retorno em caso de sucesso List<substance>
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 204, 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 204, 400 e 401
         [HttpGet]
         [SwaggerResponse((200), Type = typeof(List<SubstanceVO>))]
         [SwaggerResponse(204)]
@@ -46,11 +46,11 @@ namespace LojaVirtual.Controllers
             return new OkObjectResult(_substanceBusiness.FindAll());
         }
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/persons/v1/
         // [SwaggerResponse((202), Type = typeof(List<substance>))]
         // determina o objeto de retorno em caso de sucesso List<substance>
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 204, 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 204, 400 e 401
         [HttpGet("find-by-name")]
         [SwaggerResponse((200), Type = typeof(List<SubstanceVO>))]
         [SwaggerResponse(204)]
@@ -63,11 +63,11 @@ namespace LojaVirtual.Controllers
             return new OkObjectResult(_substanceBusiness.FindByName(name));
         }
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/persons/v1/
         // [SwaggerResponse((202), Type = typeof(List<substance>))]
         // determina o objeto de retorno em caso de sucesso List<substance>
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 204, 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 204, 400 e 401
         [HttpGet("find-with-paged-search/{sortDirection}/{pageSize}/{page}")]
         [SwaggerResponse((200), Type = typeof(List<SubstanceVO>))]
         [SwaggerResponse(204)]
@@ -80,11 +80,11 @@ namespace LojaVirtual.Controllers
             return new OkObjectResult(_substanceBusiness.FindWithPagedSearch(name, sortDirection, pageSize, page));
         }
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/persons/v1/{id}
         // [SwaggerResponse((202), Type = typeof(substance))]
         // determina o objeto de retorno em caso de sucesso substance
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 204, 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 204, 400 e 401
         [HttpGet("{id}")]
         [SwaggerResponse((200), Type = typeof(SubstanceVO))]
         [SwaggerResponse(204)]
@@ -99,11 +99,11 @@ namespace LojaVirtual.Controllers
             return new OkObjectResult(substance);
         }
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/
         // [SwaggerResponse((202), Type = typeof(substance))]
         // determina o objeto de retorno em caso de sucesso substance
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 400 e 401
         [HttpPost]
         [SwaggerResponse((201), Type = typeof(SubstanceVO))]
         [SwaggerResponse(400)]
@@ -116,10 +116,10 @@ namespace LojaVirtual.Controllers
             return new OkObjectResult(_substanceBusiness.Create(substance));
         }
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/persons/v1/
         // determina o objeto de retorno em caso de sucesso substance
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 400 e 401
         [HttpPut]
         [SwaggerResponse((202), Type = typeof(SubstanceVO))]
         [SwaggerResponse(400)]
@@ -135,10 +135,10 @@ namespace LojaVirtual.Controllers
         }
 
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/persons/v1/
         // determina o objeto de retorno em caso de sucesso substance
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 400 e 401
         [HttpPatch]
         [SwaggerResponse((202), Type = typeof(SubstanceVO))]
         [SwaggerResponse(400)]
@@ -153,9 +153,9 @@ namespace LojaVirtual.Controllers
             return new OkObjectResult(updatedPerson);
         }
 
-        // Configura o Swagger para a operação
+        // Configura o Swagger para a operaï¿½ï¿½o
         // http://localhost:{porta}/api/persons/v1/{id}
-        // O [SwaggerResponse(XYZ)] define os códigos de retorno 400 e 401
+        // O [SwaggerResponse(XYZ)] define os cï¿½digos de retorno 400 e 401
         [HttpDelete("{id}")]
         [SwaggerResponse(204)]
         [SwaggerResponse(400)]

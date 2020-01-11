@@ -7,5 +7,6 @@ namespace LojaVirtual.Repository.Generic
     public interface IReparoRepository : IRepository<Reparo>
     {
         List<Reparo> FindByName(string titulo);
+        List<Reparo> FindAll();
     }
 }

@@ -13,7 +13,6 @@ namespace LojaVirtual.Repository.Implementations
 
         public List<Reparo> FindByName(string titulo){
             return null;
-        
         }
     
      }

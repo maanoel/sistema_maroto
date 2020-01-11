@@ -54,3 +54,17 @@ C:\Users\manoel.vitor\Desktop\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtua
 C:\Users\manoel.vitor\Desktop\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.runtimeconfig.dev.json
 C:\Users\manoel.vitor\Desktop\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.dll
 C:\Users\manoel.vitor\Desktop\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.pdb
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.deps.json
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.runtimeconfig.json
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.runtimeconfig.dev.json
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.dll
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\bin\Debug\netcoreapp2.1\loja_virtual.pdb
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.csprojAssemblyReference.cache
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.csproj.CoreCompileInputs.cache
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.RazorAssemblyInfo.cache
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.RazorAssemblyInfo.cs
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.AssemblyInfoInputs.cache
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.AssemblyInfo.cs
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.RazorTargetAssemblyInfo.cache
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.dll
+C:\Users\manoel.vitor\Desktop\github\Nova pasta\sistema_maroto\virtual_vscode\obj\Debug\netcoreapp2.1\loja_virtual.pdb

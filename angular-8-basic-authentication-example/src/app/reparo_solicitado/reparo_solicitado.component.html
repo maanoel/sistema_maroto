@@ -1,0 +1,16 @@
+﻿<br>
+
+<div *ngFor="let item of items;">
+    <hr>
+    <h2> Solicitação: {{item.id}}</h2>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Titulo</label>
+        <input disabled [(ngModel)]="item.titulo" name="titulo" type="text" class="form-control" id="formGroupExampleInput" >
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Descricao</label>
+        <input disabled [(ngModel)]="item.descricao" type="text" class="form-control" id="formGroupExampleInput2" >
+    </div>
+    <hr>
+</div>
+<br>

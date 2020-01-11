@@ -1,0 +1,1 @@
+﻿export * from './reparo_solicitado.component';

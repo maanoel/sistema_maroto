@@ -7,6 +7,7 @@ namespace LojaVirtual.Business
     public interface IReparoBusiness
     {
         ReparoVO Create(ReparoVO Reparo);
+        List<ReparoVO> FindAll();
         
     }
 }

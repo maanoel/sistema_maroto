@@ -15299,11 +15299,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manoel.vitor\\Desktop\\virtual_vscode\\loja_virtual.csproj",
+      "projectUniqueName": "C:\\Users\\manoel.vitor\\Desktop\\github\\Nova pasta\\sistema_maroto\\virtual_vscode\\loja_virtual.csproj",
       "projectName": "loja_virtual",
-      "projectPath": "C:\\Users\\manoel.vitor\\Desktop\\virtual_vscode\\loja_virtual.csproj",
+      "projectPath": "C:\\Users\\manoel.vitor\\Desktop\\github\\Nova pasta\\sistema_maroto\\virtual_vscode\\loja_virtual.csproj",
       "packagesPath": "C:\\Users\\manoel.vitor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manoel.vitor\\Desktop\\virtual_vscode\\obj\\",
+      "outputPath": "C:\\Users\\manoel.vitor\\Desktop\\github\\Nova pasta\\sistema_maroto\\virtual_vscode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -14,6 +14,7 @@ import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { BoletoComponent } from './boleto';
 import { ReparoComponent } from './reparo';
+import { ReparoSolicitadoComponent } from './reparo_solicitado';
 import { FormsModule }   from '@angular/forms';
 
 
@@ -32,7 +33,8 @@ import { FormsModule }   from '@angular/forms';
         HomeComponent,
         LoginComponent,
         BoletoComponent,
-        ReparoComponent
+        ReparoComponent,
+        ReparoSolicitadoComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptor, multi: true },

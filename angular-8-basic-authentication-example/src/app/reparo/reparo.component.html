@@ -43,4 +43,8 @@
     </select>
 </div>
 
+<br>
+<input type="file" #file (change)="onChange(file.files)"/>
+<br>
+<br>
 <button type="Enviar" class="btn btn-primary btn-block" (click)="reparo()">Enviar</button>

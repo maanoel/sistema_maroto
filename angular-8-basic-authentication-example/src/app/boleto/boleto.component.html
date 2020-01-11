@@ -1,7 +1,7 @@
 ﻿<div class="card mt-4">
     <h4 class="card-header">Bem vindo ao sistema seu sistema </h4>
     <div class="card-body">
-        <h6>Imóvel</h6>
+        <h6>Aqui é onde ficam as informações dos seus imóveis, como débitos por exemplo :)  </h6>
         <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
     </div>
 </div>
@@ -11,8 +11,7 @@
 <div class="list-group">
     <div class="list-group-item"  *ngFor="let item of imoveis; let i = index">
         {{item.nome}} {{item.endereco}}
-        <a class="btn btn-lg btn-primary" disabled (click)="retrieve(item.id)">Consultar Débitos</a>, 
-            <a class="btn btn-lg btn-primary"  href="/reparo" disabled >Consultar Solicitações de Reparo</a>
+        <a class="btn btn-lg btn-primary" disabled (click)="retrieve(item.id)">Consultar Débitos</a> 
     </div>
 </div>
   

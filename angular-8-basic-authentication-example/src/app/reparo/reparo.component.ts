@@ -27,6 +27,24 @@ export class ReparoComponent  {
 
     }
 
+     onChange(fileSelect){
+
+        if (fileSelect.length == 0) {
+            console.log("No file selected!");
+            return
+      
+          }
+
+          let file: File = fileSelect[0];
+        
+          this.userService.getBase64Image(file).subscribe(reparo => {
+
+            debugger;
+
+        });
+          
+    }
+
     reparo(){
 
         const reparo = {
@@ -37,9 +55,10 @@ export class ReparoComponent  {
             possuiDebito : this.possuiDebito
 
         }
-
+        
         this.userService.postReparo(reparo).subscribe(reparo => {
 
+            debugger;
             this.titulo = null;
             this.descricao = null;
             this.diaIncidente = null;
